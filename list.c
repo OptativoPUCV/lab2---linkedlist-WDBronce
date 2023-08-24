@@ -179,12 +179,12 @@ Las funciones `pushBack`, `popFront` y `popBack` se pueden implementar usando `p
     list->current->next = NULL;
     list->current->prev = NULL;
   }
-  if (list->current == list->tail)
+  if (list->current == list->head)
   {
     list->current->next->prev = list->current->prev;
     list->current->next = NULL;
   }
-  if (list->current == list->head)
+  if (list->current == list->tail)
   {
     list->current->prev->next = list->current->next;
     list->current->prev = NULL;
