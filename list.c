@@ -108,7 +108,7 @@ void pushFront(List * list, void * data)
 /*Programe la función `void pushFront(List * list, void * data)`, la cual agrega un dato al comienzo de la lista. 
 > Puede utilizar la función `Node* createNode(void * data)` la cual crea, incializa y retorna un nodo con el dato correspondiente. */
 {
-  if (list== NULL || list->current == NULL || list->head == NULL)
+  if (list== NULL || list->head == NULL)
   {
     return;
   }
