@@ -171,6 +171,7 @@ Las funciones `pushBack`, `popFront` y `popBack` se pueden implementar usando `p
   {
     return NULL;
   }
+  printf("%d",(*(int*)list->head->data));
   void* dato = list->current->data;
   if (list->current->next != NULL && list->current->prev != NULL)
   {
