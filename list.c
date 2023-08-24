@@ -178,21 +178,21 @@ Las funciones `pushBack`, `popFront` y `popBack` se pueden implementar usando `p
     list->current->prev->next = list->current->next;
     list->current->next = NULL;
     list->current->prev = NULL;
-    printf("paso el if 1\n");
+    printf("  paso el if 1\n");
   }
   if (list->current == list->head)
   {
     list->current->next->prev = list->current->prev;
     list->current->next = NULL;
-    printf("paso el if 2\n");
+    printf("  paso el if 2\n");
   }
   if (list->current == list->tail)
   {
     list->current->prev->next = list->current->next;
     list->current->prev = NULL;
-    printf("paso el if 3\n");
+    printf("  paso el if 3\n");
   }
-  printf("%d",(*(int*)list->head->data));
+  printf("  %d\n",(*(int*)list->head->data));
  /* if (list->current->next == NULL && list->current->prev == NULL)
   {
     free(list->current);
